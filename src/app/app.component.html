@@ -1,1 +1,7 @@
-<router-outlet />
+<body *ngIf="router.url != '/login'">
+    
+</body>
+
+<body class="hold-transition login-page" *ngIf="router.url == '/login'">
+    <router-outlet />
+</body>
